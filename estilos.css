@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    background-color: #f8fcf8;
+}
+header {
+    width: 100%;
+    height: 180px;
+}
+
+header #img1{
+
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/*ESTILOS DE NAVEGACION*/
+
+nav{
+    background-color: #204b36;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    position: relative;
+}
+
+nav a{
+    display: block;
+    color: #f8fcf8;
+    text-decoration:none;
+    padding: 15px 20px;
+}
+
+nav a:hover{
+    background-color: #347551;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    background-color: #e1f0e4;
+    min-width: 180px;
+}
+
+nav li ul a{
+    color: #204b36;
+}
+
+nav li ul a:hover{
+    color: #f8fcf8;
+}
+
+nav li:hover ul,
+nav li:focus-within ul{
+    display:block;
+}
+
+/* estilo de pie de pagina */
+
+footer{
+    background-color: #d8ebdc;
+    color: #204b36;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 180px;
+    height: 140px;
+    margin-right: 20px;
+}
+
+/* estilo cuerpo pagina*/
+
+section{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-width: 350px;
+}
+
+.principal{
+    width: 70%;
+    background-color: #eef7f0;
+    padding: 20px;
+    border: 2px solid #76a988;
+}
+
+.secundario{
+    width: 70%;
+    background-color: #dceee0;
+    padding: 20px;
+    border: 2px solid #5b9471;
+}
+
+.secundario .video-tiktok{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.secundario a{
+    color: #204b36;
+}
+
+/* Ejemplos de posicionamiento de la segunda parcial */
+.posiciones .ejemplo{
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #dceee0;
+    border: 2px solid #5b9471;
+}
+
+.posiciones .programador{
+    padding: 10px;
+    background-color: #eef7f0;
+    border: 2px solid #76a988;
+}
+
+.posiciones .static{
+    position: static;
+}
+
+.posiciones .relative{
+    position: relative;
+    top: 8px;
+    left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.posiciones .fixed{
+    display: none;
+}
+
+.posiciones #mostrar-fixed:checked ~ .fixed{
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 260px;
+    z-index: 2;
+}
+
+.posiciones .ejemplo-sticky{
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.posiciones .sticky{
+    position: sticky;
+    top: 0;
+}
+
+.posiciones .espacio-sticky{
+    height: 130px;
+}
