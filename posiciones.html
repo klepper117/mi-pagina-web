@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header><a href="index.html"><img src="imagen11.webp" id="img1" alt="Imagen de cabecera"></a></header>
+    <nav>
+        <ul>
+            <li><a href="informacion.html">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="posiciones.html">Segunda Parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundodigital.html">Mundo Digital</a></li>
+                    <li><a href="practica-posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="comunidad.html">Comunidad Digital</a></li>
+                </ul>
+            </li>
+            <li><a aria-disabled="true" title="Contenido pendiente">Terecer Parcial</a></li>
+        </ul>
+    </nav>
+    <section>
+        <aside class="principal posiciones">
+            <h1>DIA DEL PROGRAMADOR</h1>
+            <h2>tema: posiciones con CSS</h2>
+            <p>Esta práctica consiste en aplicar las propiedades de posicionamiento en HTML con CSS, estas nos permiten controlar la ubicación de los elementos dentro de una página web.</p>
+            <h2>¿Qué es el posicionamiento?</h2>
+            <p>Dependiendo de la posición de un elemento puede permanecer en su lugar, desplazarse, colocarse encima o estar fijo.</p>
+            <h2>Posiciones que estudiaremos</h2>
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>fixed</li>
+                <li>sticky</li>
+            </ul>
+            <div class="ejemplo">
+                <div class="programador static">Estilo static: los programadores trabajan constantemente con números, lógica y estructuras para construir soluciones.</div>
+            </div>
+            <div class="ejemplo">
+                <div class="programador relative">Estilo relative: El día del programador se celebra tradicionalmente el día 256 del año.</div>
+            </div>
+            <div class="ejemplo">
+                <input type="checkbox" id="mostrar-fixed">
+                <label for="mostrar-fixed">Mostrar ejemplo fixed</label>
+                <div class="programador fixed">Estilo fixed: permanece visible al desplazarse por la página. <label for="mostrar-fixed">Cerrar</label></div>
+            </div>
+            <div class="ejemplo ejemplo-sticky">
+                <div class="programador sticky">Estilo sticky: 2⁸ = 256, relacionado con los 8 bits utilizados para representar 256 valores diferentes.</div>
+                <p>Desplázate dentro de este recuadro para ver cómo permanece arriba.</p>
+                <div class="espacio-sticky" aria-hidden="true"></div>
+            </div>
+            <h2>RECUERDEN</h2>
+            <p>ECHENLE GALLETA🍪 A TODO LO QUE HAGAN</p>
+        </aside>
+        <aside class="secundario"></aside>
+    </section>
+    <footer>
+        <img src="logo_udc.png" alt="Universidad de Colima">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación de Internet I</p>
+        </div>
+    </footer>
+</body>
+</html>

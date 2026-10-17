@@ -1,0 +1,96 @@
+/* Estilos de los ejemplos de Position */
+
+.contenedor {
+    position: relative;
+    min-height: 130px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #eef7f0;
+    border: 2px solid #76a988;
+}
+
+.caja {
+    width: 100px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.naranja {
+    background-color: orange;
+    color: black;
+}
+
+.azul {
+    background-color: lightskyblue;
+    color: black;
+}
+
+/* 1. Static */
+.static .naranja {
+    position: static;
+    margin-bottom: 5px;
+}
+
+/* 2. Relative */
+.relative .naranja {
+    position: relative;
+    top: 65px;
+    left: 102px;
+}
+
+/* 3. Absolute */
+.absolute .naranja {
+    position: absolute;
+    right: 5px;
+}
+
+/* 4. Fixed */
+.fixed {
+    min-height: 100px;
+}
+
+.fixed .azul {
+    width: 100%;
+    height: 70px;
+}
+
+.fixed::after {
+    content: "Fixed";
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 80px;
+    height: 50px;
+    background-color: orange;
+    border: 2px solid #76a988;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+/* 5. Sticky */
+.sticky {
+    height: 180px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.barra-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #347551;
+    color: #f8fcf8;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.sticky p {
+    padding: 0 10px;
+}

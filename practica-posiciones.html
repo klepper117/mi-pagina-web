@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de posiciones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="practica-posiciones.css">
+</head>
+<body>
+    <header><a href="index.html"><img src="imagen11.webp" id="img1" alt="Imagen de cabecera"></a></header>
+    <nav>
+        <ul>
+            <li><a href="informacion.html">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="posiciones.html">Segunda Parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundodigital.html">Mundo Digital</a></li>
+                    <li><a href="practica-posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="comunidad.html">Comunidad Digital</a></li>
+                </ul>
+            </li>
+            <li><a aria-disabled="true" title="Contenido pendiente">Tercer Parcial</a></li>
+        </ul>
+    </nav>
+    <section>
+        <aside class="principal">
+            <h2>Práctica de posiciones CSS</h2>
+            <p>Ejemplos de los cinco valores de la propiedad position.</p>
+
+            <h3>1. Static</h3>
+            <p>Los elementos siguen el orden normal de la página.</p>
+            <div class="contenedor static">
+                <div class="caja naranja">Naranja</div>
+                <div class="caja azul">Azul</div>
+            </div>
+
+            <h3>2. Relative</h3>
+            <p>El elemento se mueve respecto a su posición original.</p>
+            <div class="contenedor relative">
+                <div class="caja naranja">Naranja</div>
+                <div class="caja azul">Azul</div>
+            </div>
+
+            <h3>3. Absolute</h3>
+            <p>El elemento se posiciona respecto a su contenedor.</p>
+            <div class="contenedor absolute">
+                <div class="caja naranja">Naranja</div>
+                <div class="caja azul">Azul</div>
+            </div>
+
+            <h3>4. Fixed</h3>
+            <p>La caja naranja permanece fija en la pantalla.</p>
+            <div class="contenedor fixed">
+                <div class="caja azul">Contenedor</div>
+            </div>
+
+            <h3>5. Sticky</h3>
+            <p>La barra se mantiene en la parte superior de su área al desplazarte.</p>
+            <div class="contenedor sticky">
+                <div class="barra-sticky">Barra Sticky</div>
+                <p>Contenido de ejemplo para probar la posición sticky.</p>
+                <p>Desplázate dentro de este recuadro.</p>
+                <p>La barra puede permanecer arriba.</p>
+                <p>Más contenido de ejemplo.</p>
+                <p>Fin de la demostración.</p>
+            </div>
+        </aside>
+        <aside class="secundario">
+            <h2>¿Qué es Position?</h2>
+            <p>Es una propiedad de CSS que permite controlar la posición de los elementos.</p>
+
+            <h3>Valores</h3>
+            <p><b>Static:</b> posición normal.</p>
+            <p><b>Relative:</b> se mueve desde su lugar original.</p>
+            <p><b>Absolute:</b> se posiciona respecto a un contenedor.</p>
+            <p><b>Fixed:</b> permanece fijo en la pantalla.</p>
+            <p><b>Sticky:</b> combina el comportamiento relativo y fijo.</p>
+        </aside>
+    </section>
+    <footer>
+        <img src="logo_udc.png" alt="Universidad de Colima">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación de Internet I</p>
+        </div>
+    </footer>
+</body>
+</html>
